@@ -10,7 +10,9 @@ let btn = document.querySelector("button")
         resform()
 
     })
-    function ok() {
+    btn.addEventListener ("click", () =>{
+
+   
     let ui = ""
     fetch(`https:api.github.com/users/` + input.value)
         .then(response => response.json())
@@ -76,7 +78,7 @@ let btn = document.querySelector("button")
             result.innerHTML = ui
         })
 
-}
+      })
 const resform = () => {
     input.value = ""
 }
