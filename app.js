@@ -11,7 +11,7 @@ function ok() {
 
     })
     let ui = ""
-    fetch('https:api.github.com/users/' + input.value)
+    fetch(`https:api.github.com/users/` + input.value)
         .then(response => response.json())
         .then(json => {
 
