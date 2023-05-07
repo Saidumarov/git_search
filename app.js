@@ -3,13 +3,14 @@ let form = document.querySelector("form");
 let result = document.querySelector(".result");
 let btn = document.querySelector("button")
 
-function ok() {
 
-    form.addEventListener("submit", (e) => {
+
+    form.addEventListener("click", (e) => {
         e.preventDefault();
         resform()
 
     })
+    function ok() {
     let ui = ""
     fetch(`https:api.github.com/users/` + input.value)
         .then(response => response.json())
