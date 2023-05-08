@@ -14,7 +14,7 @@ let btn = document.querySelector("button")
 
    
 function ok() {
-  let ui = ""
+  let ui = "";
   fetch('https:api.github.com/users/'+ input.value )
       .then(response => response.json())
       .then(json => {
